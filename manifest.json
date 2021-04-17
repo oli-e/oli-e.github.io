@@ -1,0 +1,14 @@
+{
+  "name": "Bicycles",
+  "short_name": "Bicycles",
+  "theme_color": "#2196f3",
+  "background_color": "#fff",
+  "display": "browser",
+  "scope": "/bicycle",
+  "start_url": ".",
+  "icons": [
+    {
+      "src": "https://cdn.icon-icons.com/icons2/2387/PNG/512/bike_bicycle_icon_144650.png",
+      "type": "image/png",
+    }]
+}

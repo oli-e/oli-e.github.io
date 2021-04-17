@@ -1,0 +1,13 @@
+
+.description{
+    width:100%;
+}
+.col-sm-4 h4 {
+  text-align: center;
+
+}
+.col-sm-4 p {
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.8;
+}
