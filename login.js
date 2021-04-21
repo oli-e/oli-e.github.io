@@ -14,12 +14,12 @@ function LogIn(){
     
 }
 
-// function LogInWithG(){
-//     var provider = new firebase.auth.GoogleAuthProvider();
-//     provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
-//     firebase.auth().signInWithRedirect(provider);
-//     alert("Signed Up!");
-// }
+ function LogInWithG(){
+     var provider = new firebase.auth.GoogleAuthProvider();
+     provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
+     firebase.auth().signInWithRedirect(provider);
+     alert("Signed Up!");
+ }
 
 // auth.onAuthStateChanged(user => {
 //     if (user) {
