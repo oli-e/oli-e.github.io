@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Dream Tracker</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	 crossorigin="anonymous">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+</head>
+
+<body>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	 crossorigin="anonymous"></script>
+
+	<main>
+		<div id="co" class="container">
+		<div class="box2">
+			<div class="jumbotron text-center" id="home">
+        <h2>Welcome. Let's take you through our registration process.</h2>
+        <!-- daj scalowalne w procentach -->
+        <img src="./pictures/pandabeztla.jpeg" class="img-fluid mx-auto d-block" alt="logo">
+				
+			</div>
+			</div>
+
+			<div class="content-box mt-2">
+        <div class="row justify-content-center">
+				<div class="col-sm-4">
+					<form class="block_for_things">
+            <input class="mt-2 inputs" type="text" name="email" id="email" placeholder="email"><br>
+            <input class="mt-2 inputs" type="text" name="password" id="password" placeholder="password"><br>
+            <p id="msg" class="center">Your password has to be at least 6 characters.</p>
+            <!-- myślę że trzeba zmienić z textfielda na opcje wybierania płci, z K/M albo F/M -->
+            <button type="submit" id="saveButton" class="button2 mt-4"><img src="icons/foward.png" width="50" height="50">
+            </button>
+         </form>
+        </div>
+      </div>
+			</div>
+		</div>
+  </main>
+
+  <script>
+    var firebaseConfig = {
+    apiKey: "AIzaSyA1n4ikMv9_nOAR3Zi-fscu97E22p77U54",
+    authDomain: "pros-deb5a.firebaseapp.com",
+    projectId: "pros-deb5a",
+    storageBucket: "pros-deb5a.appspot.com",
+    messagingSenderId: "1055291993966",
+    appId: "1:1055291993966:web:27dcf694cf565b4b945b7f",
+    measurementId: "G-F0TJDB04X7"
+  };
+  
+  firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="sign_up.js"></script>
+  </body>
+</html>

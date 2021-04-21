@@ -1,52 +1,70 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="apple-touch-icon" href="https://cdn.icon-icons.com/icons2/2387/PNG/512/bike_bicycle_icon_144650.png">
-    <link rel="manifest" href="manifest.json">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="theme-color" content="#fff">
-    <title>repl.it</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="style.css" rel="stylesheet" type="text/css" />
 
-  </head>
-  <body>
-    <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <div id="co" class="container">
-      <div class="jumbotron text-center" style="background-color:#74d5d6">
-        <h1>Rowery</h1>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+  <link rel="apple-touch-icon" href="./pictures/pandabeztla.jpeg">
+  <link rel="icon" href="./pictures/pandabeztla.jpeg">
+	<title>Dream Tracker</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	 crossorigin="anonymous">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Mono" />
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+</head>
+
+<body>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	 crossorigin="anonymous"></script>
+
+  <main>
+      <div id="co" class="container">
+      <div class="box2">
+        <div class="jumbotron text-center" id="home">
+        <div class="col">
+          <img src="./pictures/pandabeztla.jpeg" class="img-fluid mx-auto d-block" alt="logo">
+          <h1>Dream Tracker</h1>
+        </div>
+
       </div>
+    </div>
+      <div class="box3">
+              <div class="mh-100 noo">
+        <div class="mt-4 noo">
+          <a href="sign_up.html" class="center">
+            <button type="button" class="btn btn-link button1" >
+              <h4> Sign Up </h4>
+            </button>
+          </a>
+        </div>
+        <div class="mt-4 noo">
+          <a href="login.html" class="center">
+            <button type="button" class="btn btn-link button1" >
+               <h4> Login </h4>
+            </button>
+          </a>
+        </div>
+        <div class="mt-4 noo">
+          <a href="home.html">
+            <button type="button" class="btn btn-link button1" onclick="LogInWithG()" >
+              <h4> Login with <img id="google-icon" src= "./icons/login-google.png"/> </h4>
+            </button>
+          </a>
+        </div>
     
-  <div class="row">
-    <div class="col-sm-4">
-      <h4> Tandem </h4>
-      <img src="https://www.hilite-bikes.com/pub/media/catalog/product/cache/10a35cdc7be47ef70135c9ef37bb1c58/2/0/20151020_01.jpg" class="img-fluid mx-auto d-block" alt="Rower Tandem">
-      <p> Rower przeznaczony dla dwóch lub więcej osób, siedzących w układzie jedna za drugą. Typowy tandem ma, tak samo jak rower jednoosobowy, jedną ramę i dwa koła, za to każda z osób ma własne: kierownicę, siodełko i pedały. Zdarzają się jednak także tandemy przeznaczone dla większej liczby osób.
-    </p>
+      </div>
+      
     </div>
-    <div class="col-sm-4">
-      <h4> Rower górski </h4>
-      <img src="https://immotion.pl/2233-large_default/rower-gorski-specialized-pitch-sport-9.jpg" class="img-fluid mx-auto d-block" alt="Rower Górski">
-      <p>Nazwa rowerów, których przeznaczeniem jest jazda w terenie trudniejszym, niż pozwalają na to rowery szosowe czy trekingowe, np. górskie ścieżki, szlaki leśne, specjalne tory przeszkód.
-    </p>
-    </div>
-    <div class="col-sm-4">
-      <h4> Rower jednokołowy </h4>
-      <img src="https://www.trasymasy.pl/wp-content/uploads/2015/07/monocykle.jpg"  class="img-fluid mx-auto d-block" alt="Rower Jednokołowy">
-      <p>Rodzaj pojazdu jednośladowego, który jest napędzany siłą ludzkich mięśni i który posiada tylko jedno koło toczące się po podłożu. Jest podobny do roweru, jednak nie posiada wielu charakterystycznych dla niego części (np. kierownicy).
-    </p>
-    </div>
-  </div>
+    </main>
 
-
-
-</div>
-
-  <script src="js/main.js"></script>
-
-  </body>
+	
+   
+</body>
 </html>

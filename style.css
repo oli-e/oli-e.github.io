@@ -1,13 +1,252 @@
-
-.description{
-    width:100%;
+body{
+  font-family:"Ubuntu Mono";
 }
-.col-sm-4 h4 {
-  text-align: center;
+
+#msg{
+  font-size:11px;
+}
+
+.container{
+  width:100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+  
+}
+
+.box3{
+  grid-column: 1/3;
+  grid-row: 2/3;
+  background-color: white;
+  background-image: url('pictures/fiskus.jpg');
+  background-repeat: no-repeat;
+  background-size: fill;
+  background-position: right;
+}
+
+
+.box2{
+  grid-column: 1/3;
+  grid-row: 1/2;
+  background-image: url('pictures/tlopionowe.jpg');
+}
+
+#google-icon{
+  max-width: 20px;
+  height: auto;
+}
+
+h1{
+  font-family: "Ubuntu Mono";
+  font-size: 50px;
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 700; 
+  line-height: 26.4px; 
+}
+
+#home{
+  background-color:rgba(255, 255, 255, 0.3);
+}
+
+
+
+#signinButton, #loginButton {
+  background-color:rgba(252, 252, 230, 0.62);
+  border:5px solid #B8977E;
+  color: black;
+  font-family:"Ubuntu Mono";
+}
+
+.button1 {
+  background-color:rgba(252, 252, 230, 0.62);
+  border:5px solid #B8977E;
+  color: black;
+  font-family:"Ubuntu Mono";
+  width:50%;
+  min-width:200px ;
+  border-radius: 10px;
+}
+.button2 {
+  background-color:rgba(0, 0, 0, 0.0);
+  color: black;
+  font-family:"Ubuntu Mono";
+  border:none;
+}
+.button2:hover {
+
+  background-color:rgba(0, 252, 0, 0.3);
+  border:none;
+  font-family:"Ubuntu Mono";
+  border-radius: 50px;
+}
+
+
+.button1:hover {
+
+  background-color:rgba(252, 252, 230, 0.62);
+  border:5px solid #B8977E;
+  color: black;
+  font-family:"Ubuntu Mono";
+}
+
+.noo {
+  width:100%;
+  text-align:center;
+}
+.center{
+  margin: auto;
+  width:80%;
+}
+.row{
+  margin:auto;
+}
+
+
+.block_for_things {
+  background-color:rgba(252, 252, 230, 0.62);
+  border:5px solid #B8977E;
+  color: grey;
+  font-family:"Ubuntu Mono";
+  border-radius: 10px;
+}
+
+.inputs {
+  background-color:rgba(0, 0, 0, 0.0);
+  font-family:"Ubuntu Mono";
+  color: black;
+  width:100%;
+  border: 10px solid transparent;
+  border-bottom: 1px solid #B8977E;
 
 }
-.col-sm-4 p {
-  text-align: justify;
-  text-justify: inter-word;
-  line-height: 1.8;
+
+/* HOME SECTION */
+.home-container{
+  /* background-color: red; */
+  width:100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 5fr 100px;
+}
+
+
+.home-main{
+  grid-row: 2/3;
+  /* grid-column: 2/3; */
+  background-color: white; 
+}
+
+.home-buttons{
+  grid-row: 3/4;
+  background-color: yellowgreen;
+  /* grid-column: 2/3; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home-button{
+  border-radius: 50%;
+  background-color:rgba(252, 252, 230, 0.62);
+  color: black;
+  font-family:"Ubuntu Mono";
+  width:20px;
+  min-width:100px ;
+}
+
+/* MEDITATION SECTION */
+.med-container{
+  border-radius: 8px;
+  border-color: #B8977E;
+  border-style: solid;
+  background-image: url('pictures/tlopionowe.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  width:100%;
+  min-height: 100vh;
+  height:auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+
+.med1, .med2, .med3 {
+  background-color: rgba(19, 206, 102, 0.06);
+  border-radius: 8px;
+  border-style: dashed;
+  border-width: 3px;
+  border-color: #B8977E;
+  grid-column: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.med1{
+  background-image: url('pictures/beach.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-size: cover;
+}
+
+.med2{
+  background-image: url('pictures/rain.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-size: cover;
+}
+
+.med3{
+  background-image: url('pictures/birds.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-size: cover;
+}
+/* SIGNUP SECTION */
+.content-box{
+  grid-column: 1/3;
+  background-color: white;
+  background-image: url('pictures/fiskus.jpg');
+  background-repeat: no-repeat;
+  background-size: fill;
+  background-position: right;
+}
+
+
+/* LIST SECTION */
+#dreamslist{
+  background-color:rgba(255, 219, 36, 0.3);
+  border:5px solid #B8977E;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.list-box{
+  grid-column: 1/3;
+  grid-row: 2/3;
+  background-color: white;
+  background-image: url('pictures/fiskus.jpg');
+  background-repeat: no-repeat;
+  background-size: fill;
+  background-position: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ADD DREAM SECTION */
+
+#adddream{
+  background-color:rgba(255, 219, 36, 0.404);
+  border:5px solid #B8977E;
+  border-radius: 10px;
+  width: 30%;
 }
