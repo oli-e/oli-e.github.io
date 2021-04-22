@@ -33,36 +33,39 @@
       <img src="./icons/log-out.png" button type="button" onclick="LogOut()" class="btn btn-link home-button mt-4">
       </a>
 		<div class="jumbotron text-center" id="home">
-			<h1 id="tekst">Witaj w holmie</h1>
+			<h1 id="tekst">Hi there!</h1>
 		</div>
     </div>
 
-    <div class="home-main"></div>
+    <div class="home-main">
+    </div>
 
     <div class="home-buttons">
-            <a href="analyze.html">
-            <img src="./icons/analyze.png" button type="button" class="btn btn-link home-button mt-4">  
-            </a>
-
-              <a href="add_dream.html">
-            <img src="./icons/add-new-dream.png" button type="button" class="btn btn-link home-button mt-4">
-            </a>
-
-
             <a href="list_of_dreams.html">
-            <img src="./icons/list-of-dreams.png" button type="button" class="btn btn-link home-button mt-4">    
-
+            <img src="./icons/list-of-dreams.png" button type="button" class="btn btn-link home-button mt-4"></a>
+            <a href="add_dream.html">
+            <img src="./icons/add-new-dream.png" button type="button" class="btn btn-link home-button mt-4"></a>
             <a href="meditation.html">
             <img src="./icons/meditations.png" button type="button" class="btn btn-link home-button mt-4"></a>
-
     </div>
 	</div>
   </main>
 
-  <script src="add_dream.js"></script>
-  <script>
 
+  <script>
+    var firebaseConfig = {
+    apiKey: "AIzaSyA1n4ikMv9_nOAR3Zi-fscu97E22p77U54",
+    authDomain: "pros-deb5a.firebaseapp.com",
+    projectId: "pros-deb5a",
+    storageBucket: "pros-deb5a.appspot.com",
+    messagingSenderId: "1055291993966",
+    appId: "1:1055291993966:web:27dcf694cf565b4b945b7f",
+    measurementId: "G-F0TJDB04X7"
+  };
+  firebase.initializeApp(firebaseConfig);
   </script>
-  <!-- <script src="home.js"></script> -->
+  <script src="home.js"></script>
+
+    
   </body>
 </html>

@@ -7,19 +7,13 @@ const saveButton = document.querySelector("#saveButton");
 
 saveButton.addEventListener("click", function () {
   const promise = auth.createUserWithEmailAndPassword(email.value, password.value);
-  console.log(location);
-  // location.replace("https://pros.rafalpietrzak.repl.co/home.html");
-  console.log()
-  window.alert("Signed Up!")
+
+  
+  promise.catch((error) => {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    window.alert(errorMessage);
+    // preventdefault
+  });
+
 });
-
-
- auth.onAuthStateChanged(function(user) {
-   if (user) {
-     var email = user.email;
-     window.alert();
-     console.log('user logged in: ', user);
-   } else {
-     console.log('user logged out');
-   }
- });

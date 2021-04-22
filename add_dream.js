@@ -1,13 +1,15 @@
-// var date = document.querySelector("#data");
-// var dreamType = document.querySelector("#dreamType");
-// var dreamcontent = document.querySelector("#dreamcontent");
+    const form = document.querySelector('#dream-form');
 
-// var tekst = document.querySelector("#tekst");
-
-// var saveDreamButton = document.querySelector("#saveDreamButton");
-
-// saveDreamButton.addEventListener("click", function(){
-//   window.alert("Your data has been saved!");
-//   console.log(date.value, dreamType, dreamcontent);
-// // zapisz do bazy danych 
-// });
+    form.addEventListener('submit', (e) => {
+      // e.preventDefault();
+      db.collection('Dreams').doc().set({
+        date: form.data.value.toString(),
+        type: form.dreamType.value,
+        content: form.dreamcontent.value
+      }).catch(e => {
+          console.log(e.message);
+          // console.log(form.data.value.toString(), form.dreamType.value, form.dreamcontent.value);
+        
+        });
+      
+    });
