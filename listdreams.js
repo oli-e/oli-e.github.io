@@ -2,17 +2,17 @@ const dreamsData = document.querySelector('#dreams-list');
 
 function showDream(doc){
   let li = document.createElement('li');
-  let date = document.createElement('span');
-  let type = document.createElement('span');
-  let content = document.createElement('span');
+  let date = document.createElement('p');
+  let type = document.createElement('h5');
+  let content = document.createElement('p');
 
   li.setAttribute('data', doc.id);
   date.textContent = doc.data().date;
   type.textContent = doc.data().type;
   content.textContent = doc.data().content;
 
-  li.appendChild(date);
   li.appendChild(type);
+  li.appendChild(date);
   li.appendChild(content);
 
   li.classList.add('list-group-item');
