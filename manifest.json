@@ -9,7 +9,7 @@
   "start_url": ".",
   "icons": [
     {
-      "src": "https://cdn.icon-icons.com/icons2/2387/PNG/512/bike_bicycle_icon_144650.png",
+      "src": "./pictures/pandabeztla.jpeg",
       "sizes": "192x192",
       "type": "image/png"
     }
