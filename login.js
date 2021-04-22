@@ -1,15 +1,25 @@
 const auth = firebase.auth();
 
-function LogIn(){
-    const email = document.querySelector("#username");
-    const password = document.querySelector("#password");
+const email = document.querySelector("#email");
+const password = document.querySelector("#password");
 
-    console.log(password.value, email.value);
-    const promise = auth.signInWithEmailAndPassword(email.value, password.value);
-    promise.catch(e => alert(e.message));
-    alert("Signed Up!" + email.value);
-   
-}
+const saveButton = document.querySelector("#saveButton");
+
+saveButton.addEventListener("click", function (e) {
+  const promise = auth.signInWithEmailAndPassword(email.value, password.value);
+  promise.catch((error) => {
+    // e.preventDefault();
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    window.alert(errorCode);
+    if (errorCode!=""){
+      const form = document.querySelector('#login-form');
+      form.action = "login.html";
+      form.submit();
+      }
+  });
+
+});
 
 function LogInWithG(){
     var provider = new firebase.auth.GoogleAuthProvider();

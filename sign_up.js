@@ -14,6 +14,11 @@ saveButton.addEventListener("click", function (e) {
     var errorCode = error.code;
     var errorMessage = error.message;
     window.alert(errorMessage);
+    if (errorCode!=""){
+      const form = document.querySelector('#login-form');
+      form.action = "sign_up.html";
+      form.submit();
+      }
   });
 
 });
