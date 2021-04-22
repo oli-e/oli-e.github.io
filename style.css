@@ -204,11 +204,10 @@ h1{
 }
 
 .med3{
-  background-image: url('pictures/birds.png');
+  background-image: url('pictures/parrot.jpg');
   background-repeat: no-repeat;
-  background-size: contain;
   background-position: center;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 /* SIGNUP SECTION */
 .content-box{
