@@ -8,7 +8,6 @@ const saveButton = document.querySelector("#saveButton");
 saveButton.addEventListener("click", function (e) {
   const promise = auth.signInWithEmailAndPassword(email.value, password.value);
   promise.catch((error) => {
-    // e.preventDefault();
     var errorCode = error.code;
     var errorMessage = error.message;
     window.alert(errorCode);
