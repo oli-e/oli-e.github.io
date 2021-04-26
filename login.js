@@ -18,7 +18,7 @@ saveButton.addEventListener("click", function (e) {
       }
   });
 
-});
+})
 
 function LogInWithG(){
     var provider = new firebase.auth.GoogleAuthProvider();
