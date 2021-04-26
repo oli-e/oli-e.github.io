@@ -10,7 +10,7 @@ saveButton.addEventListener("click", function (e) {
   promise.catch((error) => {
     var errorCode = error.code;
     var errorMessage = error.message;
-    window.alert(errorCode);
+    window.alert(errorMessage);
     if (errorCode!=""){
       const form = document.querySelector('#login-form');
       form.action = "login.html";
